@@ -1,0 +1,19 @@
+<% if flash[:alert] %>
+  <div class="alert"><%= flash[:alert] %></div>
+<% end %>
+
+<% if @user.admin %>
+  <h1>ADMIN</h1>
+<% end %>
+
+<strong>Name:</strong>
+<%= @user.name %><br>
+<strong>Tickets:</strong>
+<%= @user.tickets %><br>
+<strong>Mood:</strong>
+<%= @user.mood %><br>
+<strong>Height:</strong>
+<%= @user.height %><br>
+
+<%= link_to 'See attractions', attractions_path %><br>
+<%= link_to 'Log Out', signout_path %>
