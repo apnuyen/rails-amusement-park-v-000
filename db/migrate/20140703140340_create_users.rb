@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration
       t.integer :nausea
       t.integer :happiness
       t.integer :tickets
-      t.integer :heights
+      t.integer :height
     end
   end
 end
